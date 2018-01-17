@@ -1,7 +1,3 @@
-/*
- * Chinese SM3
- */
-
 #ifndef OPENSSL_SM3_H
 #define OPENSSL_SM3_H
 

@@ -78,6 +78,7 @@ my @known_ossl_platforms = ( "UNIX", "VMS", "WIN32", "WINNT", "OS2" );
 my @known_algorithms = ( "RC2", "RC4", "RC5", "IDEA", "DES", "BF",
 			 "CAST", "MD2", "MD4", "MD5", "SHA", "SHA0", "SHA1",
 			 "SHA256", "SHA512", "RMD160",
+			 "SM3",
 			 "MDC2", "WHIRLPOOL", "RSA", "DSA", "DH", "EC", "EC2M",
 			 "HMAC", "AES", "CAMELLIA", "SEED", "GOST",
                          "SCRYPT", "CHACHA", "POLY1305", "BLAKE2",
@@ -258,6 +259,7 @@ $crypto.=" include/openssl/ripemd.h" ; # unless $no_ripemd;
 $crypto.=" include/openssl/aes.h" ; # unless $no_aes;
 $crypto.=" include/openssl/camellia.h" ; # unless $no_camellia;
 $crypto.=" include/openssl/seed.h"; # unless $no_seed;
+$crypto.=" include/openssl/sm3.h"; # unless $no_seed;
 
 $crypto.=" include/openssl/bn.h";
 $crypto.=" include/openssl/rsa.h" ; # unless $no_rsa;
